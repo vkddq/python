@@ -60,7 +60,7 @@ def evaluate_postfix(postfix_tokens):
             elif token == '*':
                 stack.append(a * b)
             elif token == '/':
-                if b == 0:
+                if b == 0: й
                     return "Помилка: ділення на нуль!"
                 stack.append(a / b)
                 
