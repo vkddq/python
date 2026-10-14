@@ -32,7 +32,7 @@ if __name__ == "__main__":
         {"name": "Олег", "amount": 50, "status": "clean"},
         {"name": "Анна", "amount": 500, "status": "suspicious"},
         {"name": "Іван", "amount": 1500, "status": "fraud"},
-        {"name": "Бот", "amount": "100", "status": "clean"} # Фальшиві дані
+        {"name": "Бот", "amount": "100", "status": "clean"}     
     ]
     
     for client in clients:
