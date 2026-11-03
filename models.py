@@ -63,4 +63,4 @@ class Vaccine(Medicine):
         return base_price * 1.10
 
     def info(self) -> str:
-        return f"Вакцина '{self.name}' | Рецепт: {self.requires_prescription()} | Зберігання: {self.storage_requirements()} | Сума: {self.total_price():.2f}"
+        return f"Вакцина '{self.name}' | Рецепт: {self.requires_prescription()} | Зберігання: {self.storage_requirements()} | Сума: {self.total_price():.2f}"   
