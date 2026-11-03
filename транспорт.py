@@ -30,14 +30,12 @@ class Car(Transport):
         return distance * 0.07
 
     def info(self) -> str:
-        return f"Автомобіль {self.name}"
+        return self.name
 
 
 class Bus(Transport):
     def __init__(self, name: str, speed: int, capacity: int, passengers: int):
         super().__init__(name, speed, capacity)
-        if passengers > capacity:
-            raise ValueError("Перевантажено!")
         self.passengers = passengers
 
     def move(self, distance: float) -> float:
@@ -47,7 +45,9 @@ class Bus(Transport):
         return distance * 0.15
 
     def info(self) -> str:
-        return f"Автобус {self.name} ({self.passengers}/{self.capacity} місць)"
+        if self.passengers > self.capacity:
+            return f"{self.name} - «Перевантажено!»"
+        return self.name
 
 
 class Bicycle(Transport):
@@ -62,7 +62,7 @@ class Bicycle(Transport):
         return 0.0
 
     def info(self) -> str:
-        return f"Велосипед {self.name} (швидкість обмежена: {self.speed} км/год)"
+        return self.name
 
 
 class ElectricCar(Car):
@@ -72,23 +72,19 @@ class ElectricCar(Car):
     def fuel_consumption(self, distance: float) -> float:
         return 0.0
 
-    def info(self) -> str:
-        return f"Електрокар {self.name}"
-
 
 if __name__ == "__main__":
     fleet = [
         Car("Toyota", 110, 5),
-        Bus("Ikarus", 70, 40, passengers=35),
+        Bus("Ikarus", 70, 40, passengers=45),
         Bicycle("Kellys", 35, 1),
         ElectricCar("Tesla", 130, 4)
     ]
 
     distance_km = 100
-    print(f"--- Розрахунок на {distance_km} км ---")
     
     for vehicle in fleet:
-        print(f"[{vehicle.info()}]")
+        print(f"Назва: {vehicle.info()}")
         print(f"Час у дорозі: {vehicle.move(distance_km):.2f} год")
-        print(f"Витрати пального: {vehicle.fuel_consumption(distance_km):.2f} од.")
-        print("-" * 30)
+        print(f"Витрати пального: {vehicle.fuel_consumption(distance_km):.2f}")
+        print("-" * 20)
