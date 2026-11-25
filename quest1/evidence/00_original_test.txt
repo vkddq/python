@@ -1,0 +1,9 @@
+test_report_matches_golden (test_golden.GoldenMasterTest.test_report_matches_golden) ... C:\Users\rog\Documents\Codex\2026-11-25\referenced-chatgpt-conversation-this-is-an\outputs\quest1\original\blocknot.py:6: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\rog\\Documents\\Codex\\2026-11-25\\referenced-chatgpt-conversation-this-is-an\\outputs\\quest1\\barakhlo.csv' mode='r' encoding='utf-8'>
+  for l in open(f, encoding="utf-8"):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.021s
+
+OK

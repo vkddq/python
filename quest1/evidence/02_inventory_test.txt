@@ -1,0 +1,6 @@
+test_report_matches_golden (test_golden.GoldenMasterTest.test_report_matches_golden) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+OK

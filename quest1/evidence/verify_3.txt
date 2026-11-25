@@ -1,0 +1,17 @@
+test_add_remove_find_total_duplicates (test_features.InventoryTests.test_add_remove_find_total_duplicates) ... ok
+test_csv_roundtrip_all_fields_including_date (test_features.InventoryTests.test_csv_roundtrip_all_fields_including_date) ... ok
+test_empty_csv_and_invalid_records (test_features.InventoryTests.test_empty_csv_and_invalid_records) ... ok
+test_filter_any_fields_and_sort (test_features.InventoryTests.test_filter_any_fields_and_sort) ... ok
+test_legacy_csv_and_summary_quantities (test_features.InventoryTests.test_legacy_csv_and_summary_quantities) ... ok
+test_repeat_report_and_separate_loads (test_features.InventoryTests.test_repeat_report_and_separate_loads) ... ok
+test_category_then_unit_value_and_stable_ties (test_features.ItemTests.test_category_then_unit_value_and_stable_ties) ... ok
+test_coefficients (test_features.ItemTests.test_coefficients) ... ok
+test_dataclasses_and_independent_lists (test_features.ItemTests.test_dataclasses_and_independent_lists) ... ok
+test_date_factory_and_excluded_comparison (test_features.ItemTests.test_date_factory_and_excluded_comparison) ... ok
+test_str (test_features.ItemTests.test_str) ... ok
+test_report_matches_golden (test_golden.GoldenMasterTest.test_report_matches_golden) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.017s
+
+OK

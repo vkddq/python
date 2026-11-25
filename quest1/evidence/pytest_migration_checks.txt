@@ -1,0 +1,12 @@
+Original, CSV, golden master and historical test: SHA256 unchanged
+Python syntax: PASS (not a pytest run)
+Unchanged historical unittest / original/blocknot.py: PASS
+Unchanged historical unittest / stages/01_item.py: PASS
+Unchanged historical unittest / stages/02_inventory.py: PASS
+Unchanged historical unittest / blocknot.py: PASS
+New golden function called directly / original/blocknot.py: PASS (not pytest)
+New golden function called directly / stages/01_item.py: PASS (not pytest)
+New golden function called directly / stages/02_inventory.py: PASS (not pytest)
+New golden function called directly / blocknot.py: PASS (not pytest)
+Expected pytest cases from source: 36; collection/execution NOT verified
+pytest status: NOT RUN; pytest absent, network installation unavailable
